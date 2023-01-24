@@ -28,7 +28,7 @@ h1 {
 p {
     font-size: 15px;
     font-weight: 600;
-    color: var(--grayishblue)
+    color: var(--grayishblue);
 }
 .main {
     display: flex;
@@ -52,7 +52,6 @@ p {
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
-
 
 
 
@@ -101,51 +100,115 @@ p {
  }
 
 
-  /*  */
- .billing {
+/*  */
+.billing {
     display: flex;
     justify-content: center;
     gap: 20px;
     align-items: center;
- }
+}
 
 
 
 
- /* Bottom Box */ 
+/* Bottom Box */ 
 
 
- .trial {
+.trial {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     align-items: center;
     border-top: 1px solid var(--grayishblue);
- }
+}
 
- ul {
+ul {
     list-style: none;
     color: var(--grayishblue);
     font-weight: 600;
-  }
+}
 
-  
-  ul li:before {
+ul li:before {
     content: '✓';
     color: var(--strongcyan);
     padding-right: 10px;
-  }
+}
 
-  button {
+button {
    background-color: var(--darkdesatblue);
    color:white;
    border-radius: 25px;
    width: 200px;
    height: 50px;
-  }
+   border: none;
+}
 
-  button:hover {
+button:hover {
     background-color: white;
     color:black;
     cursor: pointer;
-   }
+    border: 2px solid black
+}
+   
+
+@media(max-width: 660px) {
+    
+    .header {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    h1 {
+        background-color: var(--darkdesatblue);
+        color: white;
+        padding: 10px;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    
+    .main {
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* overflow: hidden; */
+    }
+
+    
+    .container {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .price {
+        padding: 15px;
+    }
+    
+    .cost {
+        padding: 10px;
+    display: flex;
+    flex-direction: column
+    }
+
+    .trial {
+        padding: 15px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .list {
+        padding: 0;
+        margin: 0;
+    }
+
+    button {
+        border-radius: 10px;
+        width: 60%;
+        height: 50px;
+    }
+
+}
