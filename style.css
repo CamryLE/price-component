@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Space+Grotesk&display=swap');
+
+
+:root {
+    --softcyan: hsl(174, 77%, 80%); 
+    --strongcyan: hsl(174, 86%, 45%);
+    --lightgrayred: hsl(14, 92%, 95%);
+    --lightred: hsl(15, 100%, 70%);
+    --paleblue: hsl(226, 100%, 87%);
+
+    --grayishblue: hsl(225, 20%, 60%);
+    --darkdesatblue: hsl(227, 35%, 25%);
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    background-image: url('images/bg-pattern.svg');
+    background-size: 100% 70%;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: var(--darkdesatblue);
+    font-weight: 800;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--grayishblue)
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+
+
+.container {
+    width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* Top Box */
+
+
+ .price {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 40px;
+
+ }
+
+ .views {
+    display: flex;
+    gap: 10px
+ }
+
+.cost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .cost #preview {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+ }
+
+ .cost .small {
+    font-size: 20px;
+    color: var(--darkdesatblue);
+    font-weight: 800;
+ }
+
+ .cost .big {
+    font-size: 40px;
+    color: var(--darkdesatblue);
+    font-weight: 800;
+ }
+
+ #viewslider {
+  
+ }
+
+
+  /*  */
+ .billing {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+ }
+
+
+
+
+ /* Bottom Box */ 
+
+
+ .trial {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    border-top: 1px solid var(--grayishblue);
+ }
+
+ ul {
+    list-style: none;
+    color: var(--grayishblue);
+    font-weight: 600;
+  }
+
+  
+  ul li:before {
+    content: '✓';
+    color: var(--strongcyan);
+    padding-right: 10px;
+  }
+
+  button {
+   background-color: var(--darkdesatblue);
+   color:white;
+   border-radius: 25px;
+   width: 200px;
+   height: 50px;
+  }
+
+  button:hover {
+    background-color: white;
+    color:black;
+    cursor: pointer;
+   }
